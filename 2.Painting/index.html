@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="css/publick.css" />
+    <script type="text/javascript">
+        window.onload = function () {
+            var ImgArr = ["images/sky_bg.jpg"];//蓝天背景；
+            var flyDandelion = new FlyDandelion("canvas", ImgArr[0]);
+        }
+    </script>
+</head>
+<body>
+<!-- //-----------------------蒲公英---------------------- -->
+<div style="width: 100%; height: 100%;">
+    <canvas id="canvas" style="margin: 0 auto;"></canvas>
+</div>
+
+<!-- 侧栏 ------------------------------------------------------>
+<div id="right">
+    <div id="right_l">
+        <span class="block width">线&nbsp;宽</span>
+        <span class="block width">画文字</span>
+        <span class="block width">改文字</span>
+        <span class="block width">橡皮擦</span>
+        <span class="block width">橡皮宽</span>
+        <!-- <input type="button" value='重置' class="block" id="reset"/> -->
+    </div>
+    <div id="right_r">
+        <select name="line" class="block change">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="5">5</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="10">20</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+        </select>
+        <input type="button" value='T' class="block change"/>
+        <input type="button" value='' class="block change"/>
+        <div class="rubber block change"></div>
+        
+        <select name="eraser" class="block change" >
+            <option value="2">2</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="13">13</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <input type="button" value='清除' class="block"/>
+    </div>
+</div>
+
+<!-- 画板------------------------------- -->
+<canvas id="cas"></canvas>
+
+<!-- 颜色控制器------------------------------- -->
+<div id="home">
+    <div id="all">
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+        <div class="one"></div>
+    </div>
+    <div id="mom"></div>
+</div>
+<div id="addtexts">
+    <div>
+        <textarea rows="3" cols="50" placeholder="请输入要画的文字内容"></textarea>
+    </div>
+    
+    <span class='btn1'><a href="#">确定</a></span>
+    <span class='btn1'><a href="#">重置</a></span>
+    <span class='btn1'><a href="#">取消</a></span>
+</div>
+<div id="updown">
+    <a href="#"  class="nav">功能介绍
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </a>
+    <a href="#"  class="nav">上传图片
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <input type="file" id="file" />
+    </a>
+    <!-- <a href="#"  class="nav">下载图片
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </a> -->
+</div>
+<div id="introduce">
+<p>
+<h3>上传图片</h3>
+<div>点击上传图片按钮，可将所需图片作为背景进行设计</div>
+<h3>颜色控制器</h3>
+<div>画板右上角“风车区”，点击该按钮出现色盘，当写字或者画画的时候均可由这里设置颜色</div>
+<h3>工具栏</h3>
+<div>当鼠标离开画板的时候，工具栏就会出现，由设置线宽，点击画文字，改变要画的文字的内容橡皮擦，设置橡皮擦宽和清除画的所有内容几部分组成</div>
+<h3>保存图片</h3>
+<div>图片处单击右键出现保存选项</div>
+</p>
+</div>
+
+<!-- <script src='js/text.js'></script> -->
+<script src='js/Mydraw.js'></script>
+<script src='js/bg.js'></script>
+</body>
+</html>

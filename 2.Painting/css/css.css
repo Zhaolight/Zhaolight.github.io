@@ -1,0 +1,282 @@
+/* 
+* @Author: anchen
+* @Date:   2016-11-18 00:10:40
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-11-29 09:46:31
+*/
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    #cas {
+        position: absolute;
+        box-shadow: 1px 1px 3px 5px #ccc ;
+        border-radius: 10px;
+    }
+
+    #canvas {
+        position: absolute;
+    }
+
+    #color {
+        background: red;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+    }
+
+    #home {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 500px;
+        bottom: 300px;
+    }
+
+    #all {
+        position: relative;
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        margin: 4px;
+    }
+
+    .one {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+        /*-webkit-transition: 0.2s all ease;
+        -moz-transition: 0.1s all ease;*/
+    }
+
+    #mom {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-radius: 50%;
+        transition: 1s;
+        background: url('../images/bg.png');
+    }
+
+
+
+    /*//-----------------------------------------------------------------------*/
+    /* 侧帘 */
+
+    #right{
+        width: 130px;
+        height: 220px;
+        background: #000;
+        position:absolute;
+        /*top:200px;
+        right:0;*/
+        color:#fff;
+        clear: both;
+        opacity: 0.5;
+       -webkit-transition:all 0.3s linear 0s;
+       -moz-transition:all 0.3s linear 0s;
+       -o-transition:all 0.3s linear 0s;
+       -ms-transition:all 0.3s linear 0s;
+    }
+    #right_l{
+        float: left;
+        margin:5px;
+        width: 46px;
+        /*height: 300px;*/
+        /*background: red;*/
+    }
+     #right_l .width{
+        display: inline-block;
+        width: 42px;
+        height: 5px;
+        text-align:center;
+        line-height: 5px;
+     }
+
+    #right_r{
+        float: left;
+        margin:2px;
+        /*height: 190px;*/
+        /*background: green;*/
+    }
+    #right_r .change{
+        -webkit-transition:all 0.3s linear 0s;
+       -moz-transition:all 0.3s linear 0s;
+       -o-transition:all 0.3s linear 0s;
+       -ms-transition:all 0.3s linear 0s;
+
+    }
+    .block{
+        display: block;
+        margin:15px 5px;
+    }
+    
+    .rubber{
+        width: 37px;
+        height: 18px;
+        background: #fd489d;
+        border-radius: 2px;
+        margin:0 5px;
+        /*margin:0 20px;*/
+    }
+    /*----------------------------- 文字框---------------------- */
+    #addtexts{
+        position:absolute;
+       /* top:200px;
+        left: 500px;*/
+        min-width: 400px;
+        min-height: 130px;
+        display:none;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#56df04), to(#ebfcc7)); 
+        background: -moz-gradient(linear, 0 0, 0 100%, from(red), to(blue)); 
+        background: -o-gradient(linear, 0 0, 0 100%, from(red), to(blue)); 
+        background: -ms-gradient(linear, 0 0, 0 100%, from(red), to(blue)); 
+        font-size: 14px; 
+
+    }
+    .btn1{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url('../images/btn1.png');
+        background-size:cover;
+        text-align: center;
+        line-height: 40px;
+        float:right;
+        margin:5px 25px 0 0;
+    }
+    .btn2{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url('../images/btn3.png');
+        background-size:cover;
+        text-align: center;
+        line-height: 40px;
+        float:right;
+        margin:5px 25px 0 0;
+    }
+    /*-----------------------------上传下载按钮-------------------------------*/
+    #updown{
+        position:absolute;
+        top:10px;
+        left: 50px;
+
+    }
+    .nav{ 
+        position: relative;
+        display: block;
+        height: 30px;
+        padding: 0 5px;
+        float: left;
+        color:#eee; 
+        text-align: center;
+        font: 10px/30px normal;
+        letter-spacing: 4px;/*//h1和h2的字母间距*/
+        font-family: theinB;
+        box-sizing: border-box;/*假如您需要并排放置两个带边框的框，可通过将 box-sizing 设置为 "border-box"。这可令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中*/
+        border: 1px solid #ddd;
+        /*border-radius: 5px;*/
+    }
+    .nav span { 
+        position: absolute; 
+        transition: 0.4s ;
+        transition-property: width,height;/*把鼠标指针放到 div 元素上，会产生带有平滑改变元素宽度的过渡效果：*/
+        background-color: #6500ac;
+    }
+    .nav:hover { z-index: 2;}
+    .nav span:nth-of-type(1) {/*尾类选择符*/
+        left: 0%; 
+        top: -1px;
+        height: 1px;
+        width: 0;
+        right: auto;
+    }
+    .nav:hover span:nth-of-type(1) {
+        left: auto;
+        right: 0;
+        width: 100%;
+    }
+    .nav span:nth-of-type(2) {
+        left: auto; 
+        bottom: -1px;
+        height: 1px;
+        width: 0;
+        right: 0;
+    }
+    .nav:hover span:nth-of-type(2) {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+    .nav span:nth-of-type(3) {
+        top: auto;
+        bottom: 0;
+        left: -1px;
+        width: 1px;
+        height: 0;
+    }
+    .nav:hover span:nth-of-type(3) {
+        top: 0;
+        bottom: auto;
+        height: 100%;
+    }
+    .nav span:nth-of-type(4) {
+        top: 0;
+        bottom: auto;
+        right: -1px;
+        width: 1px;
+        height: 0;
+    }
+    .nav:hover span:nth-of-type(4) {
+        top: auto;
+        bottom: 0;
+        height: 100%;
+    }
+    #file{
+            background: red;
+            width: 70px;
+            height: 25px;
+            opacity: 0;
+            position: absolute;
+            top:1px;
+            left:1px;
+        }
+/* --------------------------------功能介绍------------------------------------------- */
+#introduce{
+    position: absolute;
+    top:45px;
+    left:30px;
+    color:#dd8700;
+    width: 400px;
+    background: url('../images/cloud.png') no-repeat ;
+    background-size: cover;
+    font: 10px/18px normal;
+    padding: 100px 20px 50px 70px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    transition:1s;
+    display: none;
+}
+
+#introduce div{
+    text-indent: 2em;
+    margin-bottom: 5px;
+}
