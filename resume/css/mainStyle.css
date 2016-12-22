@@ -1,0 +1,233 @@
+body, ul, li, p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', SimSun, 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+    font-size: 14px;
+    background:#fff5c7;
+}
+
+#wrap{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+img {
+    border: 0;
+}
+
+.content {
+    position: relative;
+    margin: auto 0;
+    width: 1026px;
+    height: 860px;
+}
+
+.l-pic-index {
+    position: absolute;
+    left: 450px;
+    top: 1px;
+    z-index: 2;
+    width: 79px;
+    height: 860px;
+    background: url("../img/left1.png") no-repeat right 0;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.r-pic-index {
+    position: absolute;
+    right: 450px;
+    top: 0;
+    z-index: 2;
+    width: 82px;
+    *width: 82px;
+    height: 860px;
+    background: url("../img/right2.png") no-repeat left 0;
+    background-size: 100% 100%;
+}
+
+.l-bg-index {
+    position: absolute;
+    top: 120px;
+    left: 485px;
+    z-index: 1;
+    width: 20px;
+    height: 619px;
+    background: url('../img/one1.png') right 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.r-bg-index {
+    position: absolute;
+    top: 120px;
+    left: 504px;
+    z-index: 1;
+    width: 20px;
+    height: 619px;
+    background: url(../img/two2.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-index {
+    display: none;
+    overflow: hidden;
+    zoom: 1;
+    position: absolute;
+    z-index: 5;
+    width: 850px;
+    height: 574px;
+    left: 86px;
+    top: 142px;
+    background: #fff5c7;
+    transition: 2s;
+}
+.bgPen{
+    position: absolute;
+    left: 0;
+    top: 250px;
+    display: none;
+}
+.first {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+}
+
+.second {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:850px;
+    background: #cafaa0;
+}
+.third{
+    position: absolute;
+    top: 0;
+    left:850px;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-size: 100% 100%;
+}
+.fourth{
+    position: absolute;
+    top: 0;
+    left:850px;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-size: 100% 100%;
+}
+.fifth{
+    position: absolute;
+    top: 0;
+    left:850px;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-size: 100% 100%;
+    background:url("../img/lastbg.png");
+}
+
+.mouse{
+    text-align: center;
+    margin-left: 25px;
+    width: 30px;
+    /*background: #ff0000;*/
+    margin-top: 400px;
+}
+.mouse-icon{
+     width: 25px;
+     height: 45px;
+     border: 2px solid white;
+     border-radius: 15px;
+     cursor: pointer;
+     position: relative;
+     text-align: center;
+ }
+.mouse-wheel{
+      height: 6px;
+      margin: 2px auto 0;
+      display: block;
+      width: 3px;
+      background-color: white;
+      border-radius: 50%;
+      -webkit-animation: 1.6s ease infinite wheel-up-down;
+      -moz-animation: 1.6s ease infinite wheel-up-down;
+      animation: 1.6s ease infinite wheel-up-down;
+  }
+@-webkit-keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}
+@-moz-keyframes wheel-up-down {
+     0% {
+         margin-top: 2px;
+         opacity: 0;
+     }
+     30% {
+         opacity: 1;
+     }
+     100% {
+         margin-top: 20px;
+         opacity: 0;
+     }
+ }
+@keyframes wheel-up-down {
+      0% {
+          margin-top: 2px;
+          opacity: 0;
+      }
+      30% {
+          opacity: 1;
+      }
+      100% {
+          margin-top: 20px;
+          opacity: 0;
+      }
+  }
+  .abstract{
+      margin: 50px auto;
+      border: 2px solid #008000;
+      border-radius: 30px;
+      padding: 6px;
+      width: 30%;
+      text-align: center;
+      font-size: 30px;
+  }
+.project{
+    list-style: none;
+    position: absolute;
+    left: 130px;
+}
+.project li{
+    border:1px solid gold;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+    margin: 5px 0;
+    text-indent: 20px;
+    padding: 0 40px;
+}
+.project li a{
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 30px;
+}

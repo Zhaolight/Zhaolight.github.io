@@ -1,0 +1,384 @@
+body {
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.head {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #000;
+    position: relative;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.logo {
+    width: 120px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    text-align: center;
+    float: left;
+}
+
+.skin {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url("../img/skin.png") no-repeat;
+    background-size: cover;
+    float: left;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.main {
+    width: 100%;
+    height: 91%;
+    margin: 0;
+    position: relative;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    clear: both;
+}
+
+.list a {
+    width: 100%;
+    text-decoration: none;
+    line-height: 35px;
+    display: block;
+    text-indent: 30px;
+    color: #FFFFFF;
+}
+
+.myList span {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.list a:hover {
+    background: #fff5c7;
+    color: #ff0000;
+}
+
+.skinImg {
+    position: absolute;
+    right: 50px;
+    margin: 2px;
+    width: 200px;
+    background: #FFFFFF;
+    clear-after: both;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #CCC;
+    padding: 5px;
+    display: none;
+}
+
+.skinImg li {
+    text-align: center;
+    border: 1px solid #000;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.skinImg li:hover {
+    border: 1px solid #ff0000;
+}
+
+.triangle-up {
+    position: absolute;
+    right: 68px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #FFFFFF;
+    display: none;
+}
+
+.header {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+}
+
+.center {
+    display: block;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    z-index: 9999999999;
+}
+
+#canvas {
+    opacity: .5;
+    z-index: 99999999;
+}
+
+.footer {
+    position: absolute;
+    height: 63px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    color: #fff;
+    background: #000;
+    opacity: .5;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#process {
+    margin: 25px;
+    line-height: 20px;
+    float: left;
+}
+
+#process span {
+    display: inline-block;
+}
+
+#process-bar {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 20px;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+#currentTime {
+    margin-right: 10px;
+}
+
+#cur-btn {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    margin-left: -10px;
+    top: -9px;
+    width: 20px;
+    height: 20px;
+    background: url(../img/process_btn.png) no-repeat;
+    background-size: 20px;
+}
+
+#process-bar div {
+    margin-top: 9px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    cursor: pointer;
+}
+
+#process-cur {
+    background: #F23C3C;
+}
+
+#process-all {
+    width: 100%;
+    background-color: #615D5C;
+}
+
+#control {
+    width: 30%;
+    height: 100%;
+    line-height: 63px;
+    float: left;
+    text-align: center;
+}
+
+#control span {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.loop {
+    display: block;
+    background: url(../img/play_icn_loop.png);
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    margin-bottom: 5px;
+    float: left;
+    margin-top: 14px;
+}
+
+.pre {
+    background: url(../img/play_btn_prev.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.play {
+    background: url(../img/play_rdi_btn_play.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-top: 5px;
+}
+
+.pause {
+    background: url(../img/play_rdi_btn_pause.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    margin-top: 5px;
+}
+
+.next {
+    background: url(../img/play_btn_next.png);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+#play-list {
+    z-index: 20;
+    display: block;
+    background-color: rgba(27, 27, 27, 0.8);
+    width: 30%;
+    height: 88%;
+    overflow: hidden;
+    color: #fff;
+    font-family: '微软雅黑';
+    float: left;
+}
+
+#play-list ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: #57605D;
+    opacity: .5;
+}
+
+#play-list ul li {
+    width: 100%;
+    height: 30px;
+    border-bottom: #A29B9B solid 1px;
+    font-size: 14px;
+    line-height: 30px;
+    text-indent: 1em;
+    cursor: pointer;
+}
+
+#play-list ul li span {
+    color: #82A2B2;
+}
+
+#play-list ul li.active {
+    background: url(../img/song_play_icon.png) no-repeat 1em 50%;
+    text-indent: 3em;
+}
+
+.list-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 1em;
+    border-bottom: #A29B9B solid 1px;
+
+}
+
+/*  .list-title-close:hover #play-list {
+      transition: .7s;
+      background: #ff0000;
+  }*/
+
+.lyric {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 60px;
+    width: 70%;
+    height: 390px;
+    overflow: hidden;
+    display: block;
+    z-index: 10000;
+}
+
+.lyric #line {
+    position: absolute;
+    left: 0;
+    top: 168px;
+    width: 100%;
+    height: 0;
+    border-top: 1px dashed #D5D5C7;
+    display: none;
+}
+
+.lyric ul {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    list-style: none;
+    top: 147px;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-family: '微软雅黑';
+    text-align: center;
+}
+
+.lyric ul li {
+    color: #ddd;
+    opacity: 0.7;
+    font-size: 15px;
+    transition: font-size 0.5s, color 1s, opacity 0.5s;
+    line-height: 42px;
+}
+
+.lyric ul li.active {
+    color: #4FF6E3;
+    font-size: 20px;
+    opacity: 0.99;
+}
+
+.song, .artist {
+    width: 20%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: '微软雅黑';
+    position: absolute;
+    top: 0;
+    text-align: center;
+    left: 55%;
+    color: yellow;
+}
+
+.artist {
+    font-size: 13px;
+    color: #fff;
+    top: 22px;
+}
+
+.right {
+    float: left;
+    width: 70%;
+    height: 88%;
+}

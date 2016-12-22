@@ -1,0 +1,75 @@
+
+.treeParent {
+    width: 850px;
+    height: 576px;
+    position: absolute;
+    left: 0;
+}
+
+.PersonalInfo {
+    background: url("../img/infobg.png");
+    width: 60%;
+    height: 50%;
+    line-height: 50%;
+    /*background: #31F7EF;*/
+    position: absolute;
+    right: 10%;
+    top: 2%;
+    background-size: 100% 100%;
+}
+
+.leftInfo {
+    float: left;
+    width: 30%;
+    height: 100%;
+ /*   border-radius: 50%;*/
+/*    background: #0000ff;*/
+    background-size: cover;
+    text-align: center;
+}
+.leftInfo img{
+    margin-top: 30px;
+    border: 0;
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+}
+.leftInfo span{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    font-size: 30px;
+    margin: 10px;
+    color: #29a0d7;
+}
+.rightInfo {
+    float: left;
+    position: relative;
+/*    background: #ff0000;*/
+    width: 70%;
+    height: 100%;
+}
+.rightInfo ul{
+    list-style: none;
+    color: #29a0d7;
+    font: 20px/30px '微软雅黑';
+    margin-left:30px;
+    padding-top: 30px;
+    display: block;
+}
+.PersonalInfo li {
+    font-family:  Helvetica,'Segoe UI',SimSun, 'Microsoft YaHei UI', 'Microsoft YaHei',Sans-Serif;
+    width: 100%;
+    height:40px;
+    line-height:40px;
+    -webkit-animation: moveX .5s linear;
+    -webkit-animation-fill-mode: forwards;
+    opacity: 1;
+    animation: moveX .5s linear;
+    animation-fill-mode: forwards;
+}
+.rightInfo span{
+    margin-left: 15px;
+    color: #000;
+}
