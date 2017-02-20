@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>比赛赛制</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" >
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/match.css">
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script>
+		var winw=$(window).width();
+			$("html").css("font-size",winw/375*100+"px");
+		</script>
+	</head>
+	<body>
+		<section class="wrap">
+			<header class="clearfix">
+				<a  href="notice.html"><i class="iconfont icon-fanhui2"></i></a>
+				<h2>兴趣</h2>
+				<a  href="#"><i class="iconfont icon-gengduo21"></i></a>
+			</header>
+			<section class="match-wrap">
+				<section class="match-portraits">
+					<a href=""><img src="images/cartoon01.png" alt=""></a>
+					<h3>不想起名字</h3>
+					<button id="btn1" onclick="gZhu()">+关注</button>
+				</section>
+				<figure class="match-pic">
+					<figcaption>对方想收购你的创意并向你丢了2000元现金来创作属于你的作品</figcaption>
+					<img src="images/match01.jpg" alt="">
+					<h3>作品要求：</h3>
+					<p>1.可以手稿和电子稿</p>
+					<p>2.手稿必须按照指定题目进行绘画</p>
+					<p>3.电子稿自由发挥即可</p>
+				</figure>
+				<section class="match-plan">
+					<h3>赛制安排</h3>
+					<p>1.初赛投稿日期：8.18-8.31（评比结果将发至个人中心）</p>
+					<p>2.决赛投稿日期：9.2-9.12</p>
+					<p>决赛结果公布时间：9.14</p>
+				</section>
+				<section class="match-gift oh">
+					<h3>奖项及奖品</h3>
+					<ul>
+						<li>
+							<figure><img src="images/phone.png" alt=""></figure>
+							<h4><i class="iconfont icon-lingxing"></i>最佳创意奖<i class="iconfont icon-lingxing"></i></h4>
+							<p>单副作品获得第一名</p>
+							<p>获得三星&nbsp;S7&nbsp;1部</p>
+						</li>
+						<li>
+							<figure><img src="images/ipad.png" alt=""></figure>
+							<h4><i class="iconfont icon-lingxing"></i>金奖<i class="iconfont icon-lingxing"></i></h4>
+							<p>单副作品获得前三名</p>
+							<p>获得ipad&nbsp;Air2&nbsp;1部</p>
+						</li>
+						<li class="oh">
+							<ul class="oh">
+								<li><img src="images/shouban.png" alt=""></li>
+								<li><img src="images/pen.png" alt=""></li>
+							</ul>
+							<h4><i class="iconfont icon-lingxing"></i>银奖<i class="iconfont icon-lingxing"></i></h4>
+							<p>单副作品获得前十名</p>
+							<p>获得珍藏手办&nbsp;1套 </p>
+							<p>高级录音笔一根</p>
+						</li>
+						<li>
+							<figure><img src="images/hongniu.png" alt=""></figure>
+							<h4><i class="iconfont icon-lingxing"></i>铜奖<i class="iconfont icon-lingxing"></i></h4>
+							<p>单副作品获得后十名</p>
+							<p>获得红牛&nbsp;1罐</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="match-bottom oh">
+				<i class="iconfont icon-xingxing"></i>
+				<button onclick="pingLun()">评论（700）</button>
+				<i class="iconfont icon-xingxing"></i>
+			</section>	
+		</section>
+		<section id="comment" class="comment">
+			<section class="comment-wrap">
+				<section class="comment-top oh">
+					<button class="fl" onclick="pingLun()"><i class="iconfont icon-cuo"></i></button>
+					<span class="fl">评论</span>
+					<input class="fr" type="submit" value="评论">
+				</section>
+				<textarea name="txt" placeholder="跟大家打招呼吧~" id="txt" cols="30" rows="8">
+				</textarea>
+				<a href=""><img src="images/smile.png" alt=""></a>
+			</section>
+	</section>
+		<script src="js/notice.js"></script>
+	</body>
+</html>

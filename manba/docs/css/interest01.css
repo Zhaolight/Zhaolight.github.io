@@ -1,0 +1,310 @@
+@charset "utf-8";
+@media screen and (max-width: 750px){
+html{
+	font-size:100px;
+}
+*{
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+.wrap{
+	position: absolute;
+}
+header {
+	display: flex;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 0.45rem;
+	line-height: .45rem;
+	text-align: center;
+	color: #fff;
+	background: #5acfd7;
+}
+header a{
+	flex: 1;
+	display: block;
+	position: absolute;
+	height: .45rem;
+	margin-left: .1rem;
+	line-height: .45rem;
+	color: rgba(255,255,255,.8);
+}
+header a i.icon-gengduo2{
+	display: block;
+	line-height: .45rem;
+	font-size: .3rem;
+}
+header h2{
+	flex: 1;
+	width: 100%;
+	text-align: center;
+	color:#fff;
+	line-height: .45rem;
+	font-size: .2rem;
+	font-weight: bold;
+}
+/*------------------------------header部分样式结束---------------------------------*/
+.wrap-con{
+	padding: 12% 2.67%;
+	background: #eee;
+}
+.wrap-con ul li{
+	position: relative;
+	padding-bottom: 1.9%;
+	margin:  2.67% 0;
+	background: #fff;
+	border-radius: .08rem;
+}
+.wrap-con ul li>a{
+	display: block;
+}
+.wrap-con ul li img{
+	width: 100%;
+}
+.interest-left{
+	padding-left: 1.9%;
+}
+.interest-left h3{
+	margin: 3% 0;
+	font-size: .15rem;
+	color: #111;
+}
+.interest-left input{
+	display: block;
+	text-align: center;
+	font-size: .11rem;
+	color: #5acfd7;
+	background: #fff;
+	border: .01rem solid #5acfd7;
+	border-radius: .04rem;
+}
+.interest-right{
+	overflow: hidden;
+	width: 35%;
+}
+.interest-right .title{
+	float: left;
+	width: 62%;
+}
+.interest-right .title{
+	padding: .10rem 0 0 0;
+}
+.interest-right .title p{
+	margin-bottom: .05rem;
+	padding-left: 5%;
+	font-size: .1rem;
+	color: #111;
+	border-left: .01rem solid #5acfd7;
+}
+.interest-right a{
+	display: block;
+	float: right;
+	width: 35%;
+	margin: .14rem 2% 0 0;
+	color: #fff;
+	height: .25rem;
+	line-height: .25rem;
+	text-align: center;
+	border-radius: .05rem;
+	background: #5acfd7;
+}
+.wrap-con ul li span{
+	z-index: 10;
+	position: absolute;
+	top: -.14rem;
+	right: 10%;
+	display: block;
+	width: 14%;
+	height: .28rem;
+	margin-top: .1rem;
+	line-height: .28rem;
+	color:#fff;
+	text-align: center;
+	border-radius: .04rem;
+	background: #ffa7cd;
+}
+/*------------------------内容部分样式结束---------------------------------*/
+footer{	
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	width: 100%;
+	height: .50rem;
+	border-top: 0.01rem solid #eeeeee;
+	background: #fff;
+}
+footer ul{
+	display: flex;
+}
+footer ul li{
+	flex: 1;
+	text-align: center;
+}
+footer ul li a{
+	display: block;
+}
+footer ul li a .iconfont{
+	display: block;
+	margin-top: 0.15rem ;
+	line-height: .25em;
+	font-size: .25rem;
+	color: #898989;
+}
+footer ul li a p{
+	margin-top: 0.05rem;
+	line-height: .25rem;
+	color: #888;
+}
+footer ul li:nth-child(1) a i{
+	margin: 0.13rem 0 0.07rem 0;
+	font-size: .3rem;
+}
+footer ul li:nth-child(4) a i{
+	color: #5ad0d8;
+}
+footer ul li:nth-child(4) a p{
+	color: #5ad0d8;
+}
+footer ul li:nth-child(3){
+	margin-top: -0.05rem;
+}
+footer ul li:nth-child(3) a i{
+	display: block ;width: .5rem;height:.5rem;margin: 0 auto;
+	background: #5acfd7; color: #fff; font-size: .3rem;
+	border-radius: 50%;
+	line-height: .5rem;
+}
+/*-------------------------footer部分样式结束-------------------------------*/
+/*---------------------------侧边栏部分样式---------------------------------*/
+.sidebar{
+	position: absolute;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	background: url('../images/cebianlan_bg.jpg') no-repeat;
+	background-size: cover;
+}
+.side-con{
+	width: 100%;
+	height: 100%;
+	padding-top: 15%;
+	background: rgba(25, 25, 24, .7);
+}
+.side-con .top h2{
+	width: .6rem;
+	height:.6rem;
+	margin: 0 5%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.side-con .top h2 img{
+	width: 100%;
+}
+.side-con .top-con{
+	width: 55%;
+	padding: .1rem 0;
+}
+.side-con .top-con h3{
+	font-size: .16rem;
+	font-weight: 700;
+	color: #fff;
+}
+.side-con .top-con h4{
+	font-size: .12rem;
+	color: #bfbfbe;
+}
+.side-con .top>a{
+	display: block;
+	float: left;
+}
+.side-con .top>a i.iconfont{
+	font-size: .15rem;
+	line-height: .6rem;
+}
+.side-con .mid{
+	width: 100%;
+	margin: .1rem 0;
+}
+.side-con .mid a{
+	display: block;
+	width: 25%;
+	text-align: center;
+}
+.side-con .mid a span{
+	color: #f6f6f6;
+}
+.side-con .mid a p{
+	color: #999;
+}
+.side-con .mid a:nth-child(1){
+	margin-left: 25%;
+}
+.side-con .mid a:nth-child(2){
+	margin-right: 25%;
+	border-left: 1px solid #eee;
+}
+.side-con .note h2,
+.side-con .active h2{
+	width: 100%;
+	padding-left: 5%;
+	line-height: .22rem;
+	color: #949494;
+	background: #666;
+}
+.side-con .note ul li,
+.side-con .active ul li{
+	width: 100%;
+	height: .45rem;
+	padding-left: 8%;
+	border-top: .01rem solid #656565;
+	line-height: .45rem;
+}
+.side-con .note ul li a,
+.side-con .active ul li a{
+	position: relative;
+	float: left;
+	display: block;
+	font-size: .16rem;
+	color: #888;
+}
+.side-con .note ul li a i,
+.side-con .active ul li a i{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	margin: -.05rem 0 0 -.05rem;
+	display: block;
+	color: #eb4f38;
+}
+.side-con .bottom{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: .65rem;
+	padding: .12rem 5%;
+	border: .01rem solid #444;
+	box-sizing: border-box;
+}
+.side-con .bottom a{
+	display: block;
+	font-size: .16rem;
+	line-height: .34rem;
+	color: #888;
+}
+.side-con .bottom a.fl .iconfont{
+	font-size: .25rem;
+}
+.side-con .bottom a.fr {
+	padding-right: 4px;
+	border: .02rem solid #888;
+	border-radius:.2rem;
+}
+.side-con .bottom a.fr .iconfont{
+	display:block;
+	float: left;
+	font-size: .3rem;
+}
+}

@@ -1,0 +1,45 @@
+@charset "utf-8";
+@media screen and (max-width: 750px){
+html{
+	font-size:100px;
+}
+*{
+	text-decoration: none;
+	list-style-type: none;
+	outline: none;
+}
+.guidance-wrap{
+	width: 100%;
+}
+.guidance-pic1{
+	position: absolute;
+	top: 38%;
+	left: 30%;
+	width: 1.4rem;
+	height: 1.2rem;
+	margin: 0 auto;
+	background: #f3f3f3;
+	border-radius: .2rem;
+	box-shadow: .03rem .03rem .04rem 0 #d1d1d1;
+}
+.guidance-pic1 img{
+	margin: .1rem 0 0 .04rem;
+}
+.guidance-pic2{
+	position: absolute;
+	bottom: .2rem;
+	left: 30%;
+	width: 40%;
+	margin: 0 auto;
+}
+.guidance-pic2 img{
+	width: 100%;
+}
+.guidance-wrap figcaption{
+	font-size: .15rem;
+	color: #333;
+	text-align: center;
+	border-top: .03rem solid #696969;
+}
+
+}

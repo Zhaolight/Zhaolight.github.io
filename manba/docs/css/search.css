@@ -1,0 +1,211 @@
+@charset"utf-8";
+@media screen and (max-width: 750px){*/
+	html{
+		font-size: 100px;
+	}
+	body{
+		background: #eee;
+	}
+	header {
+		display: flex;
+		z-index: 999;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 0.45rem;
+		line-height: .45rem;
+		text-align: center;
+		color: #fff;
+		background: #5acfd7;
+	}
+	header a{padding-left: 2.7%;color:#fff;}
+	header a:nth-child(3){padding-right: 2.7%;}
+	header a .icon-back{
+		
+		color: #fff;
+	}
+	header span{
+		flex: 1;
+		line-height: .45rem;
+		font-size: .2rem;
+	}
+	.icon-guanzhu{
+		margin-right: 2.7%;
+		color: #fff;
+	}
+
+	/*-----------------------------header结束-----------------------------*/
+
+	article{
+		overflow: hidden;
+		width: 100%;
+		height: 2.4rem;
+		margin-top: .45rem;
+		background: url("../images/pic01.jpg");
+		background-size: cover;
+	}
+	.head{
+		width: .7rem;
+		height: .7rem;
+		margin: .19rem auto;
+		border-radius: 50%;
+		background: url("../images/pic11.jpg");
+		background-size: 100%;
+	}
+	article .focus{
+		width: 100%;
+		margin: 0 auto;
+	}
+	article .focus li{
+		height:.24rem;
+		line-height: .24rem;
+		border:0.01rem solid #fff;
+		border-radius: 0.02rem;
+		font-size: .14rem;
+		text-align: center;
+		color: #fff;
+	}
+	.focus-01{
+		width: .46rem;
+		margin-left: 30%;
+	}
+	.focus-02{
+		width: .7rem;
+		margin-right: 30%;
+	}
+	article p{
+		margin-top: .7rem;
+		text-align: center;
+		color: #fff;
+	}
+	.name{
+		width: 100%;
+		margin-top: .34rem;
+	}
+	.name li{
+		float: left;
+		width: 33.3%;
+		height: .32rem;
+		text-align: center;
+		font-size: .15rem;
+		text-align: center;
+		color: #fff;
+	}
+	.name-first{
+		border-bottom: 0.03rem solid #5acfd8;
+	}
+
+	/*----------------------article结束-----------------------*/
+
+	/*-------------------------帖子部分开始------------------------*/
+
+	.list{
+		width: 100%;
+	}
+	.list ul{
+		width: 100%;
+		height: 4rem;
+		margin-top: .1rem;
+		padding-left: 2%;
+	}
+	.list ul li{
+		width: 100%;
+		height: 1.88rem;
+	}
+	.list-first{
+		margin-bottom:.24rem;
+	}
+	.list-head{
+		width: .4rem;
+		height: .4rem;
+		margin-right: .1rem;
+		border-radius: .2rem;
+	}
+	.list-list01{
+		height: .4rem;
+	}
+	.list01{
+		font-size: .13rem;
+		font-weight: 700;
+	}
+	.list02{
+		font-size: .11rem;
+	}
+	.list-list02{
+		font-size: .13rem;
+		padding-top: .1rem;
+	}
+	.list-pic img{
+		width: 24%;
+		border-radius: .04rem;
+	}
+
+	/*------------------------------------帖子部分结束------------------------------*/
+
+	/*------------------------------------相册部分开始------------------------------*/
+
+	.photo{
+		width: 100%;
+	}
+	.photo ul li{
+		float: left;
+		width: 24%;
+		height: 1rem;
+		margin-right: 1%;
+	}
+	.photo ul li img{
+		width: 100%;
+	}
+
+	/*------------------------------------相册部分结束------------------------------*/
+
+	/*------------------------------------M单部分开始------------------------------*/
+
+	.word{
+		width: 100%;
+	}
+	.word ul li{
+		overflow: hidden;
+		width: 100%;
+		margin-top: .05rem;
+		border-bottom: .01rem solid #a9a9a9;
+	}
+	.word ul li img{
+		float: left;
+		width: 10%;
+		margin: 0 1%;
+	}
+	.word-list{
+		float: left;
+		width: 87%;
+	}
+	.word-list p{
+		font-size: .1rem;
+		margin-right: 1%;
+	}
+
+	/*------------------------------------M单部分结束------------------------------*/
+
+	footer{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: .49rem;
+		background: #5acfd7;
+	}
+	footer i{
+		left: 35%;
+		color: #fff;
+	}
+	footer span{
+		display: block;
+		width: 100%;
+		height: .49rem;
+		line-height: .49rem;
+		text-align: center;
+	}
+	footer span a{
+		font-size: .16rem;
+		color: #fff;
+	}
+}

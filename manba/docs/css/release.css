@@ -1,0 +1,123 @@
+ @charset"utf-8";
+ /*----------------------------------------手机端修饰----------------------*/
+@media screen and (max-width: 750px){
+html{font-size: 100px}
+
+/*----------------------------------------header修饰-----------------------------------------*/
+
+header {
+	display: flex;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	line-height: .45rem;
+	height: 0.45rem;
+	text-align: center;
+	color: #fff;
+	background: #5acfd7;
+}
+header .iconfont {
+	flex:1;
+	padding-left:.05rem;
+	font-size: .22rem; color: #fff;
+}
+header span{flex:1;margin-right: .4rem;line-height:.45rem;font-size: .2rem}
+
+/*----------------------------------------wrap修饰-----------------------------------------*/
+.wrap{overflow: hidden;margin-top: .6rem;}
+
+.guild{
+	width: 100%; height: 1.55rem; float: left;
+	background: #fff; padding-top: .11rem ;
+}
+.guild .bg{
+	display: block; width: .47rem;height: .47rem; float: left;
+	background-image: url(../images/toux_03.jpg) ;background-size: 100%; 
+	background-repeat: no-repeat;
+	border-radius: 50%;  margin-left: .11rem;
+}
+.Single{ margin: .08rem 0 0 .08rem; float: left;}
+
+.guild span{font-size: .13rem; color: #020202; }
+
+.Single p{font-size: .1rem; color: #a3a5a5 ;}
+
+.Excerpt{
+	float: left; width: 98%; margin:.11rem 0 0 .11rem;
+}
+.Excerpt p{ padding-right: .1rem; font-size: .12rem; color: #7c7f7f ; }
+
+.comment{
+	width: 100%; height: .36rem; float: left;margin-top: .11rem;
+	border-top: .01rem solid #eee;
+}
+.comment ul li{
+	width: 33%; height: .25rem; float: left;margin-top: .05rem;
+	text-align: center; line-height: .3rem;
+	border-right: .01rem solid #eee; 
+	font-size: .13rem; color: #a0a0a0;
+}
+.comment ul li span{ font-size:.13rem; color: #a0a0a0;padding-left:.04rem; }
+
+.comment ul li:nth-child(3){ border:none;}
+
+.guild-p{width: 100%;height: .05rem; background:#f0f0f0; float: left; }
+
+/*----------------------------------------footer修饰-----------------------------------------*/
+footer{	
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	width: 100%;
+	height: .50rem;
+	border-top: 0.01rem solid #eeeeee;
+	background: #fff;
+}
+footer ul{
+	display: flex;
+}
+footer ul li{
+	flex: 1;
+	text-align: center;
+}
+footer ul li a{
+	display: block;
+}
+footer ul li a .iconfont{
+	display: block;
+	margin-top: 0.15rem ;
+	line-height: .25em;
+	font-size: .25rem;
+	color: #898989;
+}
+footer ul li a p{
+	margin-top: 0.05rem;
+	line-height: .25rem;
+	color: #888;
+}
+footer ul li:nth-child(1) a i{
+	margin: 0.13rem 0 0.07rem 0;
+	font-size: .3rem;
+}
+footer ul li:nth-child(5) a i{
+	color: #5ad0d8;
+}
+footer ul li:nth-child(5) a p{
+	color: #5ad0d8;
+}
+footer ul li:nth-child(3){
+	margin-top: -0.05rem;
+}
+footer ul li:nth-child(3) a i{
+	display: block ;width: .5rem;height:.5rem;margin: 0 auto;
+	background: #5acfd7; color: #fff; font-size: .3rem;
+	border-radius: 50%;
+	line-height: .5rem;
+}
+
+
+
+
+
+}

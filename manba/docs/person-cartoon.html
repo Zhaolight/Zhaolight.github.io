@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>个人连载漫画</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" >
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/person-cartoon.css">
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script>
+		var winw=$(window).width();
+			$("html").css("font-size",winw/375*100+"px");
+		</script>
+	</head>
+	<body>
+	<section class="wrap">
+		<header class="clearfix">
+			<a  href="notice.html"><i class="iconfont icon-fanhui2"></i></a>
+			<h2>兴趣</h2>
+			<a  href=""><i class="iconfont icon-gengduo21"></i></a>
+		</header>
+		<section class="cartoon-wrap">
+			<section class="cartoon-portraits">
+				<a href=""><img src="images/cartoon01.png" alt=""></a>
+				<h3>不想起名字</h3>
+				<button id="btn1" onclick="gZhu()">+关注</button>
+			</section>
+			<figure class="cartoon-pic">
+				<img src="images/cartoon02.jpg" alt="">
+				<figcaption>个人连载漫画《雷神的复仇》</figcaption>
+				<p>很久很久以前，有一个哥们儿是个神，被贬之后落入凡间爱上了 一个人类女孩，从此不能自拔的感情故事……</p>
+			</figure>
+			<button>添加提醒</button>
+		</section>
+		<section class="attention">
+			<section class="attention-top oh" >
+				<ul>
+					<li><img src="images/cartoon01.png" alt=""></li>
+					<li><img src="images/cartoon01.png" alt=""></li>
+					<li><img src="images/cartoon01.png" alt=""></li>
+					<li><img src="images/cartoon01.png" alt=""></li>
+					<li><img src="images/cartoon01.png" alt=""></li>
+				</ul>
+				<a href=""><i class="iconfont icon-youjiantou"></i></a>
+				<span>已有300人添加提醒</span>
+			</section>
+			<section class="attention-comment oh">
+				<h3>全部评论</h3><button><i class="iconfont icon-xiajiantou1-copy"></i></button>
+				<ul>
+					<li>
+						<figure class="attention-pic">
+							<a href=""><img src="images/cartoon01.png" alt=""></a>
+						</figure><p>阿西吧</p>
+						<section class="attention-title oh">
+							
+							<a href=""><i class="iconfont icon-xinhas"></i></a>
+							<span>486</span>
+						</section>
+					</li>
+					<li>
+						<figure class="attention-pic">
+							<a href=""><img src="images/cartoon01.png" alt=""></a>
+						</figure><p>德玛西亚</p>
+						<section class="attention-title oh">
+							
+							<a href=""><i class="iconfont icon-xinhas"></i></a>
+							<span>352</span>
+						</section>
+					</li>
+					<li>
+						<figure class="attention-pic">
+							<a href=""><img src="images/cartoon01.png" alt=""></a>
+						</figure><p>骚男</p>
+						<section class="attention-title oh">
+							
+							<a href=""><i class="iconfont icon-xinhas"></i></a>
+							<span>200</span>
+						</section>
+					</li>
+					<li>
+						<figure class="attention-pic">
+							<a href=""><img src="images/cartoon01.png" alt=""></a>
+						</figure><p>骚男真骚</p>
+						<section class="attention-title oh">
+							
+							<a href=""><i class="iconfont icon-xinhas"></i></a>
+							<span>158</span>
+						</section>
+					</li>
+				</ul>
+			</section>
+		</section>
+		<section class="attention-bottom oh">
+			<i class="iconfont icon-xingxing"></i>
+			<button onclick="pingLun()">评论（700）</button>
+			<i class="iconfont icon-xingxing"></i>
+		</section>
+	</section>
+	<section id="comment" class="comment">
+		<section class="comment-wrap">
+			<section class="comment-top oh">
+				<button class="fl" onclick="pingLun()"><i class="iconfont icon-cuo"></i></button>
+				<span class="fl">评论</span>
+				<input class="fr" type="submit" value="评论">
+			</section>
+			<textarea name="txt" placeholder="跟大家打招呼吧~" id="txt" cols="30" rows="8">
+			</textarea>
+			<a href=""><img src="images/smile.png" alt=""></a>
+		</section>
+	</section>
+		<script src="js/notice.js"></script>
+	</body>
+</html>

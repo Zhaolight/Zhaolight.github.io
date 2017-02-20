@@ -1,0 +1,57 @@
+@charset"utf-8";
+@media screen and (max-width: 750px){
+	html{
+		font-size: 100px;
+	}
+	header {
+		display: flex;
+		z-index: 999;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		line-height: .45rem;
+		height: 0.45rem;
+		text-align: center;
+		color: #fff;
+		background: #5acfd7;
+		}
+		header a{margin-left: .1rem;}
+	header a i{
+		color: #fff;
+	}
+	header input{
+		flex: 1;
+		margin:.075rem .1rem 0 .2rem;
+		height: .3rem;
+		line-height: .3rem;
+		font-weight: 400;
+		border:none;
+		border-radius: .04rem;
+		background: #26b9c4;
+	}
+	::-webkit-input-placeholder {
+		padding-left: .1rem;
+		color:#fff;
+	}
+
+	/*----------------------------------header部分结束----------------------------------*/
+
+	.hot h2{
+		margin: .6rem 0 .1rem;
+		margin-left: 5%;
+		font-size: .16rem;
+		color: #434343;
+	}
+	.hot ul{
+		margin-left: 8%;
+	}
+	.hot ul li{
+		float: left;
+		width: 15%;
+		margin-bottom: .2rem;
+		font-size: .14rem;
+		color: #5c5c5c;
+	}
+
+	/*----------------------------------hot部分结束----------------------------------*/
+}

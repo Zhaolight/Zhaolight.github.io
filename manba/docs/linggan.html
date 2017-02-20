@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>灵感</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/linggan.css">
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		<script>
+		var winw=$(window).width();
+			$("html").css("font-size",winw/375*100+"px");
+		</script>
+	</head>
+	<body>
+		<div class="warp">
+			<header class="clearfix">
+				<a  href="mainIndex.html">取消</a>
+				<a href="#"><input type="submit" value="发布"></a>
+			</header>
+			<div class="content">
+				<input type="text" placeholder="输入标题（有标题更吸引人哦）">
+				<hr>
+				<textarea name="txt" id="" cols="30" rows="10">输入帖子（帖子光着好害羞，加入图片吧）</textarea>
+				<div class="caozuo">
+					<button><i class="iconfont icon-xiangji"></i></button>
+					<button><i class="iconfont icon-jiahao-copy"></i></button>
+				</div>
+				<div class="bottom">
+					<button><i class="iconfont icon-dingwei"></i>&nbsp;所在位置</button>
+					<hr>
+					<div class="tab clearfix">
+						<button><i class="iconfont icon-biaoqian"></i>&nbsp;标签</button>
+						<a href="tab.html">选择标签<i class="iconfont icon-youjiantou-copy"></i></a>
+					</div>
+					<button><i class="iconfont icon-duihao"></i>&nbsp;同意把我的帖子分享到漫芭之外的地方，比如微信微博朋友圈等</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

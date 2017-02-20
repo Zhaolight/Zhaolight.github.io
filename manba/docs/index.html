@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>引导页1</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/guidance.css">
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script>
+        var winw = $(window).width();
+        $("html").css("font-size", winw / 375 * 100 + "px");
+    </script>
+</head>
+<body>
+<section class="guidance-wrap">
+    <figure class="guidance-pic1">
+        <img src="images/logo.png" alt="">
+    </figure>
+    <figure class="guidance-pic2">
+        <img src="images/mword.png" alt="">
+        <figcaption>二&nbsp;&nbsp;&nbsp;&nbsp;次&nbsp;&nbsp;&nbsp;&nbsp;元&nbsp;&nbsp;&nbsp;&nbsp;社&nbsp;&nbsp;&nbsp;&nbsp;区</figcaption>
+    </figure>
+</section>
+<script src="js/swiper-3.4.0.jquery.min.js"></script>
+<script language="javascript">
+    var mySwiper = new Swiper('.guidance-wrap', {
+        preventClicks: false//默认true
+    });
+    mySwiper.on('tap', function () {
+        window.location.href='guidance2.html'
+    })
+</script>
+
+
+<!--<script>
+    $('guidance-wrap').on("starttouch", function () {
+        alert(666)
+    })
+
+</script>-->
+</body>
+</html>

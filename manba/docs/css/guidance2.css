@@ -1,0 +1,45 @@
+@charset "utf-8";
+@media screen and (max-width: 750px){
+html{
+	font-size:100px;
+}
+*{
+	text-decoration: none;
+	list-style-type: none;
+	outline: none;
+}
+.guidance2-wrap{
+	width: 100%;
+}
+.guidance2-pic1{
+	position: relative;
+	width: 100%;
+}
+.guidance2-pic1 img{
+	width: 100%;
+}
+.guidance2-pic1 figcaption{
+	position: absolute;
+	bottom: 2%;
+	left: 40%;
+	color: #fff;
+	font-size: .15rem;
+}
+.guidance2-pic2{
+	position: absolute;
+	bottom: .26rem;
+	left: 30%;
+	width: 40%;
+	margin: 0 auto;
+}
+.guidance2-pic2 img{
+	width: 100%;
+}
+.guidance2-pic2 figcaption{
+	font-size: .15rem;
+	color: #333;
+	text-align: center;
+	border-top: .03rem solid #696969;
+}
+
+}

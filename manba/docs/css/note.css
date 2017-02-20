@@ -1,0 +1,89 @@
+@charset"utf-8";
+@media screen and (max-width: 750px){
+html{
+	font-size: 100px;
+}
+.wrap{
+	position: absolute;
+}
+header {
+	display: flex;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 0.45rem;
+	text-align: center;
+	color: #fff;
+	background: #5acfd7;
+}
+header a{
+	display: block;
+	width: 11%;
+	color: #fff;
+}
+header .iconfont{
+	font-size: .22rem;
+	line-height: .45rem;
+}
+h1{
+	flex: 1;
+	width: 78%;
+	float: left;
+	line-height: .45rem;
+	font-size: .2rem;
+}
+.content{
+	width: 100%;
+	margin-top: .45rem;
+	padding-top: .35rem;
+}
+.content ul li{
+	width: 100%;
+	height: .5rem;
+	padding: 0 3%;
+	border-bottom: .01rem solid #e4e5e6;
+}
+.content ul li a{
+	display: block;
+	width: 100%;
+	padding: .1rem 0;
+	line-height: .3rem;
+}
+.content ul li a p{
+	float: left;
+	width: .3rem;
+	height: .3rem;
+	margin-right: 2%;
+	border-radius: 50%;
+	text-align: center;
+	line-height: .3rem;
+	color: #fff;
+}
+.content ul li:nth-child(1) a p{
+	background: #5acfd7;
+}
+.content ul li:nth-child(2) a p{
+	background: #ffa874;
+}
+.content ul li:nth-child(3) a p{
+	background: #ff7acb;
+}
+.content ul li:nth-child(4) a p{
+	background: #67d46c;
+}
+.content ul li:nth-child(5) a p{
+	background: #eb4f38;
+}
+.content ul li:nth-child(6) a p{
+	background: #5acfd7;
+}
+.content ul li a span{
+	font-size: .15rem;
+}
+.content ul li a>i{
+	float: right;
+}
+
+
+}

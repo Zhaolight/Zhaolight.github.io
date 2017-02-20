@@ -1,0 +1,93 @@
+@charset"utf-8";
+@media screen and (max-width: 750px){
+html{
+	font-size: 100px;
+}
+.wrap{
+	position: absolute;
+}
+header {
+	display: flex;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 0.45rem;
+	/*text-align: center;*/
+	color: #fff;
+	background: #5acfd7;
+}
+header a{
+	flex: 1;
+	display: block;
+	width: 11%;
+	color: #fff;
+}
+header a:nth-child(1){
+	margin-left: 2%;
+}
+header a:nth-child(2){
+	text-align: right;
+	margin-right: 2%;
+}
+header a{
+	font-size: .15rem;
+	line-height: .45rem;
+}
+header a input{
+	padding: 0 .05rem;
+	border: .01rem solid #fff;
+	border-radius: .03rem;
+	color: #fff;
+	background: #5acfd7;
+}
+.content{
+	width: 100%;
+	margin-top: .45rem;
+	padding: 5% 3% 0;
+}
+.content input{
+	width: 100%;
+	margin-bottom: 3%;
+	border: none;
+	font-size: .13rem;
+}
+.content textarea{
+	width: 100%;
+	margin: 3% 0;
+	border: none;
+	color: #9c9c9c;
+}
+.content .caozuo,
+.content .bottom button{
+	margin: 3% 0;
+}
+.caozuo button{
+	width: .7rem;
+	height: .7rem;
+	margin-right: 3%;
+	border: .01rem solid #adadad;
+	background: #fff;
+}
+.caozuo button .iconfont{
+	font-size:.52rem;
+	color: #adadad;
+}
+.content .bottom button{
+	border: none;
+	font-size: .15rem;
+	color: #adadad;
+	background: #fff;
+}
+.content .bottom button .iconfont{
+	color: #5acfd7;
+}
+.content .bottom a{
+	display: block;
+	float: right;
+	line-height: .42rem;
+	color: #5acfd7;
+}
+
+
+}

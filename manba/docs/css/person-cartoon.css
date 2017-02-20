@@ -1,0 +1,310 @@
+@charset "utf-8";
+@media screen and (max-width: 750px){
+html{
+	font-size:100px;
+}
+*{
+	text-decoration: none;
+	list-style-type: none;
+	outline: none;
+}
+body{
+	background: #eee;
+}
+.wrap{
+	position: absolute;
+	width: 100%;
+}
+header {
+	display: flex;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 0.45rem;
+	text-align: center;
+	color: #fff;
+	background: #5acfd7;
+}
+
+header h2{
+	flex: 1;
+	width: 78%;
+	text-align: center;
+	color:#fff;
+	line-height: .45rem;
+	font-size: .2rem;
+	font-weight: bold;
+}
+header a{
+	display: block;
+	width: 11%;
+	height: .45rem;
+	color: rgba(255,255,255,.8);
+	line-height: .45rem;
+	text-align: center;
+}
+header a i.icon-fanhui2,
+header a i.icon-gengduo21{
+	display: block;
+	line-height: .45rem;
+	font-size: .22rem;
+}
+/*------------------------header样式结束-----------------------------*/
+.cartoon-wrap{
+	width: 100%;
+	margin-top: .45rem;
+	padding: .1rem 0;
+	background: #fff;
+}
+.cartoon-portraits{
+	width: 100%;
+	padding:.05rem 0 .4rem 0;
+}
+.cartoon-portraits a,
+.cartoon-portraits button{
+	display: block;
+}
+.cartoon-portraits a{
+	margin-bottom: .08rem;
+}
+.cartoon-portraits a{
+	float: left;
+	width: 10%;
+	margin-left: 5%;
+}
+.cartoon-portraits a img{
+	width: 100%;
+}
+.cartoon-portraits a,
+.cartoon-portraits h3{
+	float: left;
+}
+.cartoon-portraits h3{
+	margin: 1% 0 0 2%;
+	line-height: .3rem;
+	font-size: .15rem;
+	color: #222;
+}
+.cartoon-portraits button{
+	float: right;
+	width: 13%;
+	margin:2% 3% 0 0;
+	font-size: .12rem;
+	color: #5acfd7;
+	text-align: center;
+	background: none;
+	border: 0.01rem solid #5acfd7;
+	border-radius: .04rem;
+}
+.cartoon-pic{
+	overflow: hidden;
+	width: 100%;
+}
+.cartoon-pic img{
+	float: left;
+	width: 100%;
+}
+.cartoon-pic figcaption{
+	margin: 1.6rem 0 1% 1%;
+	line-height: .24rem;
+	font-size: .16rem;
+	color: #222;
+}
+.cartoon-pic p{
+	width: 90%;
+	margin-left: 2%;
+	text-indent:.24rem;
+	font-size: .14rem;
+	color: #222;
+	text-overflow: ellipsis;
+}
+.cartoon-wrap>button{
+	width: 20%;
+	margin: .1rem 0 0 40%;
+	color: #68d56c;
+	background: none;
+	border: 0.01rem solid #68d56c;
+}
+.attention{
+	width: 100%;
+	padding: .1rem 0;
+}
+.attention-top{
+	width: 100%;
+	line-height: .26rem;
+} 
+.attention-top ul li{
+	float: left;
+	width: 6%;
+	margin: .05rem 0 .05rem 1%;
+}
+.attention-top ul li:first-child{
+	margin-left: 2%;
+}
+.attention-top ul li img{
+	width: 100%;
+}
+.attention-top a{
+	margin-top: .3rem;
+	padding: .2rem 0 0 2%;
+}
+.attention-top span{
+	float: right;
+	margin-right: 2%;
+	font-size: .13rem;
+	color: #222;
+}
+.attention-comment{
+	position: relative;
+	background: #fff;
+}
+.attention-comment h3{
+	/*width: 20%;*/
+	height: .3rem;
+	padding-top: .05rem;
+	margin: 0 0 .1rem 2%;
+	font-size: .16rem;
+	color: #222;
+	line-height: .22rem;
+	font-weight: bold;
+}
+.attention-comment button{
+	position: absolute;
+	top: -2%;
+	left: 20%;
+	background: none;
+	border: none;
+}
+.attention-comment button i{
+	font-size: .25rem;
+}
+.attention-comment ul li{
+	overflow: hidden;
+	margin-bottom: .1rem;
+}
+.attention-comment ul li .attention-pic{
+	float: left;
+	width: 8%;
+	margin-left: 2%;
+}
+.attention-comment ul li .attention-pic img{
+	width: 100%;
+}
+.attention-comment ul li p{
+	float: left;
+	margin-left: 2%;
+	font-size: .16rem;
+	color: #222;
+	line-height: .25rem;
+}
+.attention-comment ul li .attention-title {
+	float: right;
+	margin-right: 2%;
+}
+.attention-comment ul li .attention-title a{
+	color: #eb4f38;	
+}
+.attention-comment ul li .attention-title a i{
+	font-size: .2rem;
+}
+.attention-comment ul li .attention-title span{
+	font-size: .15rem;
+}
+.attention-bottom{
+	padding: 0 0 .1rem 0;
+}
+.attention-bottom i,
+.attention-bottom button{
+	float: left;
+	display: block;
+}
+.attention-bottom button{
+	width: 30%;
+	margin: 0 20%;
+	font-size: .15rem;
+	text-align: center;
+	border: 0.01rem solid #68d56c;
+	border-radius: .05rem;
+	background: none;
+}
+.attention-bottom i{
+	display: block;
+	color: #68d56c;
+}
+.attention-bottom i:first-child{
+	margin-left: 10%;
+}
+/*---------------------------关注样式结束-----------------------------------*/
+.comment{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding: 80% 0 20% 0;
+	background: rgba(0,0,0,.8);
+}
+.comment-wrap{
+	position: relative;
+	padding-bottom: .15rem;
+	border-radius: .05rem;
+	background: #eee;
+}
+.comment-top button,
+.comment-top span,
+.comment-top input{
+	display: block;
+}
+.comment-top button,
+.comment-top input{
+	background: none;
+	border:none;
+}
+.comment-top button{
+	width: 12%;	
+}
+.comment-top button i{
+	font-size: .25rem;
+	color: #999;
+}
+.comment-top span{
+	width: 70%;
+	font-size: .16rem;
+	line-height: .3rem;
+	text-align: center;
+}
+.comment-top input{
+	width: 16%;
+	margin: .05rem .03rem 0 0;
+	line-height: .2rem;
+	font-size: .16rem;
+	color: #fff;
+	background: #5acfd7;
+	border-radius: .04rem;
+}
+.comment-wrap #txt{
+	display: block;
+	width: 85%;
+	margin: 0 auto;
+ 	overflow:auto;
+ 	word-break:break-all;
+ 	font-size: .12rem; 
+	border-radius: .05rem;
+	border: none;
+}
+.comment-wrap a{
+	position: absolute;
+	bottom: 10%;
+	left: 8%;
+	display: block;
+	width: .22rem;
+	height: .22rem;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.comment-wrap a img{
+	width: 100%;
+}
+/*------------------------点击评论页面样式结束---------------*/
+
+}

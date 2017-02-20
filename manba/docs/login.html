@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script>
+        /*设置屏幕宽高*/
+        var winw = $(window).width();
+        $("html").css("font-size", winw / 375 * 100 + "px");
+    </script>
+</head>
+<body>
+<!--登录页面涉及jsp存储技术、jsonp引入数据接口技术、本案例尚未完成数据存储故而后续将继续完成-->
+<section class="login-wrap " id="wrap">
+    <figure class="login-icon">
+        <img src="images/touxiang.jpg" alt="">
+    </figure>
+    <section class="login-set oh">
+        <ul>
+            <li>
+                <i class="iconfont icon-yonghuming"></i>
+                <input type="text" placeholder="输入用户名" class="userName">
+            </li>
+            <li>
+                <i class="iconfont icon-mima"></i>
+                <input type="password" placeholder="输入密码" class="passWord">
+            </li>
+        </ul>
+        <a class="fl" href="">忘记密码？</a>
+        <a class="fl" href="">新用户注册</a>
+        <input type="submit" value="确认登录">
+        <a href="mainIndex.html">随便看看</a>
+    </section>
+    <footer class="clearfix">
+        <section class="login-style1">
+            <a href=""><i class="iconfont icon-qq1"></i></a>
+            <span>QQ</span>
+        </section>
+        <section class="login-style2">
+            <p>快捷方式登录</p>
+            <a href=""><i class="iconfont icon-weixin"></i></a>
+            <span>微信</span>
+        </section>
+        <section class="login-style3">
+            <a href=""><i class="iconfont icon-weibo1"></i></a>
+            <span>微博</span>
+        </section>
+    </footer>
+</section>
+<section class="login-bg"></section>
+
+</body>
+</html>

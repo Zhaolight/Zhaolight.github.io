@@ -1,0 +1,149 @@
+@charset"utf-8";
+@media screen and (max-width: 750px){
+html{
+	font-size: 100px;
+}
+.wrap{
+	position: absolute;
+}
+header {
+	display: flex;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 0.45rem;
+	text-align: center;
+	color: #fff;
+	background: #5acfd7;
+}
+header a{
+	display: block;
+	width: 11%;
+	color: #fff;
+}
+header .iconfont{
+	font-size: .22rem;
+	line-height: .45rem;
+}
+h1{
+	flex: 1;
+	width: 78%;
+	float: left;
+	line-height: .45rem;
+	font-size: .2rem;
+}
+.content{
+	width: 100%;
+	margin-top: .6rem;
+	padding: 5% 3% 0;
+}
+.content ul li{
+	float: left;
+	width: 33.3%;
+	height: .9rem;
+	margin-bottom: .15rem;
+	text-align: center;
+}
+.content ul li a{
+	display: block;
+	font-size: .13rem;
+}
+.content ul li a h2{
+	width: .5rem;
+	height: .5rem;
+	margin: 0 auto .14rem;
+	border-radius: 50%;
+	line-height: .5rem;
+}
+.content ul li:nth-child(1) a h2{
+	background: #5acfd7;
+}
+.content ul li:nth-child(2) a h2{
+	background: #ffa874;
+}
+.content ul li:nth-child(3) a h2{
+	background: #67d46c;
+}
+.content ul li:nth-child(4) a h2{
+	background: #fc8383;
+}
+.content ul li:nth-child(5) a h2{
+	background: #467dbb;
+}
+.content ul li:nth-child(6) a h2{
+	background: #a52081;
+}
+.content ul li:nth-child(7) a h2{
+	background: #33ac50;
+}
+.content ul li:nth-child(8) a h2{
+	background: #ffea77;
+}
+.content ul li:nth-child(9) a h2{
+	background: #ffb3b5;
+}
+.content ul li:nth-child(10) a h2{
+	background: #dd3f37;
+}
+.content ul li:nth-child(11) a h2{
+	background: #b1e899;
+}
+.content ul li a h2 .iconfont{
+	display: block;
+	font-size: .2rem;
+	color: #fff;
+}
+/* ------------------------------------底部操作栏----------------------------- */
+footer{	
+	position: fixed;
+	bottom: 0;
+	z-index: 999;
+	width: 100%;
+	height: .50rem;
+	border-top: 0.01rem solid #eeeeee;
+	background: #fff;
+}
+footer ul{
+	display: flex;
+}
+footer ul li{
+	flex: 1;
+	text-align: center;
+}
+footer ul li a{
+	display: block;
+}
+footer ul li a .iconfont{
+	display: block;
+	margin-top: 0.15rem ;
+	line-height: .25em;
+	font-size: .25rem;
+	color: #898989;
+}
+footer ul li a p{
+	margin-top: 0.05rem;
+	line-height: .25rem;
+	color: #888;
+}
+footer ul li:nth-child(1) a i{
+	margin: 0.13rem 0 0.07rem 0;
+	color: #5ad0d8;
+	font-size: .3rem;
+
+}
+footer ul li:nth-child(1) a p{
+	color: #5ad0d8;
+}
+footer ul li:nth-child(3){
+	margin-top: -0.05rem;
+}
+footer ul li:nth-child(3) a i{
+	display: block ;width: .5rem;height:.5rem;margin: 0 auto;
+	background: #5acfd7; color: #fff; font-size: .3rem;
+	border-radius: 50%;
+	line-height: .5rem;
+}
+
+
+}
